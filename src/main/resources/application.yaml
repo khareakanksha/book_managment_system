@@ -1,0 +1,15 @@
+server:
+    port: 5001
+
+spring:
+  application:
+      name: book-managment-user-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/book_managment_user_service
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
